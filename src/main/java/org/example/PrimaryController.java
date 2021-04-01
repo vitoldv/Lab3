@@ -54,17 +54,16 @@ public class PrimaryController {
         double side_1 = Math.abs(Double.parseDouble(side_input_1.getText()));
         double side_2 = Math.abs(Double.parseDouble(side_input_2.getText()));
         double side_3 = Math.abs(Double.parseDouble(side_input_3.getText()));
-        try {
-            if ((side_1+side_2)<=side_3 || (side_1+side_3)<=side_2 || (side_2+side_3)<=side_1)
-                throw new Exception();
 
-        }catch (Exception exception) {
+        if (Triangle.isExist(side_1, side_2, side_3)==false)
+        {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Error");
             alert.setHeaderText("Triangle with such sides doesn't exist");
             alert.showAndWait();
             return;
         }
+
         per.setText(Double.toString(side_1 + side_2 + side_3));
     }
 
@@ -84,17 +83,16 @@ public class PrimaryController {
         double side_1 = Math.abs(Double.parseDouble(side_input_1.getText()));
         double side_2 = Math.abs(Double.parseDouble(side_input_2.getText()));
         double side_3 = Math.abs(Double.parseDouble(side_input_3.getText()));
-        try {
-            if ((side_1+side_2)<=side_3 || (side_1+side_3)<=side_2 || (side_2+side_3)<=side_1)
-                throw new Exception();
 
-        }catch (Exception exception) {
+        if (Triangle.isExist(side_1, side_2, side_3)==false)
+        {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Error");
             alert.setHeaderText("Triangle with such sides doesn't exist");
             alert.showAndWait();
             return;
         }
+
         double halfper=(side_1+side_2+side_3)/2;
         double area;
         area=Math.sqrt(halfper*(halfper-side_1)*(halfper-side_2)*(halfper-side_3));

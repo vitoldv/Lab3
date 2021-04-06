@@ -47,12 +47,12 @@
    </Text>
    <TextField fx:id="side_input_2" layoutX="272.0" layoutY="100.0" prefHeight="33.0" prefWidth="244.0" />
    <TextField fx:id="side_input_3" layoutX="272.0" layoutY="155.0" prefHeight="33.0" prefWidth="244.0" />
-   <Label fx:id="per" layoutX="109.0" layoutY="290.0" prefHeight="46.0" prefWidth="81.0" text="0">
+   <Label fx:id="perimeter" layoutX="109.0" layoutY="290.0" prefHeight="46.0" prefWidth="81.0" text="0">
       <font>
          <Font size="25.0" />
       </font>
    </Label>
-   <Label fx:id="ar" layoutX="354.0" layoutY="290.0" prefHeight="46.0" prefWidth="81.0" text="0" textAlignment="CENTER">
+   <Label fx:id="area" layoutX="354.0" layoutY="290.0" prefHeight="46.0" prefWidth="81.0" text="0" textAlignment="CENTER">
       <font>
          <Font size="25.0" />
       </font>

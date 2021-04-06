@@ -33,10 +33,10 @@ public class PrimaryController {
     private TextField side_input_3;
 
     @FXML
-    private Label per;
+    private Label perimeter;
 
     @FXML
-    private Label ar;
+    private Label area;
 
     @FXML
     void buttonPer(ActionEvent event) {
@@ -64,7 +64,7 @@ public class PrimaryController {
             return;
         }
 
-        per.setText(Double.toString(side_1 + side_2 + side_3));
+        perimeter.setText(Double.toString(side_1 + side_2 + side_3));
     }
 
     @FXML
@@ -94,9 +94,9 @@ public class PrimaryController {
         }
 
         double halfper=(side_1+side_2+side_3)/2;
-        double area;
-        area=Math.sqrt(halfper*(halfper-side_1)*(halfper-side_2)*(halfper-side_3));
-        ar.setText(Double.toString(area));
+        double ar;
+        ar=Math.sqrt(halfper*(halfper-side_1)*(halfper-side_2)*(halfper-side_3));
+        area.setText(Double.toString(ar));
     }
 
     @FXML
